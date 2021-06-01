@@ -1,0 +1,189 @@
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+.square {
+	width: 30%;
+	background-color: #232323;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 50%;
+	transition: background 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+	box-shadow: inset -15px -15px 40px -16px;
+	transition: opacity 1.5s; 
+}
+.square:hover {
+	cursor: pointer;
+	transition: box-shadow 250ms;
+	box-shadow: inset -12px -12px 40px -16px, 7px 7px 25px 0px #111;
+}
+.noHover:hover {
+	cursor: default;
+	box-shadow: inset -15px -15px 40px -16px;
+}
+
+.wrong {
+	width: 30%;
+	background-color: #232323;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 50%;
+	transition: background 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+	box-shadow: inset -15px -15px 40px -16px;
+	transition: opacity 500ms; 
+	opacity: 0;
+}
+
+#container {
+	margin: 20px auto;
+	max-width: 400px;
+
+}
+
+#intro {
+	height: 100%;
+	background-color: steelblue;
+	font-weight: normal;
+	color: #efefef;
+}
+
+h1 {
+	text-align: center;
+	line-height: 1.1;
+	margin: 0;
+	text-transform: uppercase;
+	padding: 20px 0;
+	text-shadow: 5px 5px 9px #111;
+	transition: text-shadow .5s;
+}
+h1:hover {
+	cursor: pointer;
+	text-shadow: 7px 7px 13px #111;
+	font-size: 
+}
+h1:title {
+	transition: 250ms;
+}
+#rgb {
+	display: none;
+}
+
+
+#stripe {
+	background-color: white;
+	height: 30px;
+	text-align: center;
+}
+
+#explain {
+	float: left;
+	text-align: right;
+}
+
+#explore {
+	float: right;
+	text-align: left;
+}
+.selected {
+	color: white;
+	background-color: steelblue;
+}
+#color-display {
+	font-size: 200%;
+}
+#message {
+	display: inline-block;
+	width: 20%;
+}
+#input {
+	height: 100%;
+	border: none;
+	text-align: center;
+}
+
+button {
+	border: none;
+	background-color: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+	outline: none;
+	text-shadow: 1.2px 1.2px 1.3px #333;
+}
+
+button:hover {
+	color: white;
+	background-color: steelblue;
+}
+.btn-toggle-nav {
+	float: right;
+	text-align: left;
+}
+
+.nav-sidebar {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	width: 1px;
+	/*height: calc(100vh - 60px);*/
+	padding: 0 5px;
+	background-color: #232323;
+	z-index: 1000;
+	transition: all 0.3s ease-in-out;
+	float: right;
+}
+.nav-sidebar ul {
+	/*padding-top: 15px;*/
+	overflow: hidden;
+	visibility: hidden;
+	text-align: right;
+}
+.nav-sidebar ul li {
+	/*line-height: 60px;*/
+	list-style: none;
+}
+.nav-sidebar ul li span {
+	
+	display: block;
+	height: 30px;
+	/*padding: 0 10px;*/
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: arial;
+	font-size: 16px;
+	white-space: nowrap;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+.nav-sidebar ul li a:hover {
+	/*background-color: #222;*/
+}
+
+#scorekeeper {
+  position: relative;
+  top: 5px;
+  left: 5%;
+  float: left;
+  width: 17%;
+}
+#average {
+  position: relative;
+  top: 5px;
+  right: 5%;
+  float: right;
+  width: 17%;

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- edit explaination to be better -->
+	<!-- Add toggle menu with the different game modes explore, timed, super challenge etc. -->
+	<!-- Add a timed mode: how many can you guess correctly in 15 seconds? correct guessed add one. incorrect guesses subtract .5 (something like that) maybe averages -->
+	<title>RGB-guessing-game</title>
+	<!-- <link rel="stylesheet" type="text/css" href="resetstyle.css"> -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<div>
+	<div id="intro">
+		<h1 title="Change color format?">
+			The Great 
+			<br>
+			<span id="color-display"></span>
+			<br>
+			Color Game
+		</h1>
+		<div id="rgb">
+			<p>
+				RGB color space or RGB color system, constructs all the colors from the combination of the Red, Green and Blue colors. The red, green and blue use 8 bits each, which have integer values from 0 to 255. This makes 256*256*256=16777216 possible colors. RGB ≡ Red, Green, Blue
+			</p>
+
+			<p>
+				Each pixel in the LED monitor displays colors this way, by combination of red, green and blue LEDs (light emitting diodes). When the red pixel is set to 0, the LED is turned off. When the red pixel is set to 255, the LED is turned fully on. Any value between them sets the LED to partial light emission.
+			</p>
+
+			<p>
+				And here is the point: a computer cannot store colors the way we see them. A color is a property of light, a wavelength, or a mix of wavelengths. Or even better: a color is a perception, something that only exists in humans’ minds. We cannot store light waves on a computer's hard disk, let alone a human perception. A computer needs numbers or it cannot store, process and show any image.
+			</p>
+
+			<p>
+				A digital photograph consists of pixels, a pixel being a colored dot, the smallest element of the image. Each pixel has one and only one color. That may be a real color, but it may also be white, black or some shade of grey (which I consider colors too). These colors are somehow encoded as numbers. If I have a pixel that is white in my photograph, how is it coded internally? Black? And what about orange, dark olive green, lilac, etc.?
+			</p>
+		</div>
+	</div>
+	</div>
+	<div id="stripe">
+		<button id="explain">Explain It</button>
+		<button id="reset">New Colors</button>
+		<span id="message"></span>
+		<button class="mode">Easy</button>
+		<button class="mode" class="selected">Medium</button>
+		<button class="mode">Hard</button>
+		<button class="mode btn-toggle-nav" onclick="toggleNav()">Game Mode</button>
+	</div>
+	<aside class="nav-sidebar">
+		<ul>
+			<li><span class="modes">Free Play</span></li>
+			<li><span class="modes">Explore</span></li>
+			<li><span class="modes">Speed Run</span></li>
+			<li><span class="modes">Average</span></li>
+			<li><span class="modes">Sudden Death</span></li>
+		</ul>
+	</aside>
+	<h4 id="scorekeeper" title="These are your past scores">ggg</h4>
+	
+	<div id ="container">
+    
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div id="hidden"></div>
+
+	</div>
+	<!-- <h4 id="average" title="This is your average score">ggg</h4>
+ -->
+<script type="text/javascript" src="script-charlie.js"></script>
+</body>
+</html>
